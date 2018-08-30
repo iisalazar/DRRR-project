@@ -1,0 +1,31 @@
+body {
+    background: #EFF6EE;
+}
+.ui.menu .item img.logo {
+    margin: 0 1.5em 0 1.5em;
+}
+.ui.menu {
+    background: #b50000;
+}
+.ui.menu .item {
+    color: white;
+    font-size: 15px;
+}
+.ui.inverted.footer {
+    background: #b50000;
+}
+* {
+    font-family: Ubuntu;
+}
+.ui.container.content {
+    margin: 10em;
+}
+.ui.container .ui.segment {
+    margin: 1em 0 1em 0;
+}
+.ui.sidebar.vertical.menu .item{
+    color: #000;
+}
+.ui.sidebar.menu .sidebar.header {
+    margin: 10px 10px;
+}

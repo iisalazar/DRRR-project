@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="semantic/semantic.min.css">
+    <style>
+        body {
+            background: #EFF6EE;
+        }
+        .ui.menu .item img.logo {
+            margin: 0 1.5em 0 1.5em;
+        }
+        .ui.menu {
+            background: #b50000;
+        }
+        .ui.menu .item {
+            color: white;
+            font-size: 15px;
+            padding: 7.5px;
+        }
+        .ui.inverted.footer {
+            background: #b50000;
+        }
+        * {
+            font-family: Ubuntu;
+        }
+        .ui.container.content {
+            margin: 10em;
+        }
+        .ui.container .ui.segment {
+            margin: 1em 0 1em 0;
+        }
+        .ui.sidebar.vertical.menu .item{
+            color: #000;
+        }
+        .ui.sidebar.menu .sidebar.header {
+            margin: 10px 10px;
+        }
+        .banner.form {
+            margin: 10em 5em 5em 5em;
+            text-align: center;
+        }
+        .weather.data {
+            margin: 0 20em 0 20em;
+            border: #000 solid;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ui primary menu">
+        <a href="#" class="toc item">
+            <i class="sidebar icon"></i>
+            Menu
+        </a>
+        <div class="right item">
+            
+                <img src="img/logo.png" class="logo">
+                Open-source Weather Forecast Service
+            
+        </div>
+    </div>
+    <div class="ui vertical sidebar menu">
+        <div class="item">
+            asds
+        </div>
+    </div>
+    <div class="ui container">
+        <div class="banner form">
+            <form action="" class="ui form">
+                <div class="ui action left icon input">
+                    <i class="search icon"></i>
+                    <input type="text" name="location" placeholder="Enter location">
+                </div>
+                <input type="submit" class="ui teal button" name="Search">
+            </form>
+        </div>
+        <div class="ui raised segment">
+            <div class="ui stackable grid">
+                <div class="row">
+                    <div class="six wide center aligned centered column">
+                        <div class="ui segment">
+                            <div class="ui grid">
+                                <div class="row">
+                                    <div class="six wide column">
+                                        <img src="http://openweathermap.org/img/w/{{ weather_forecast.icon }}.png" height="50px">
+                                    </div>
+                                    <div class="ten wide column">
+                                        <div class="text">
+                                            <h3>{{ weather_forecast.name }}</h3>
+                                            <p>{{ weather_forecast.temperature }}</p>
+                                            <p>{{ weather_forecast.condition }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="weather-forecast.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+</body>
+</html>

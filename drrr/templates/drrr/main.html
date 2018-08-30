@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'semantic/semantic.min.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+        <div class="ui masthead segment">
+                <div class="ui container">
+                    <div class="ui secondary inverted menu" id="main-menu">
+                        <a class="header active item" href="#">
+                            <img src="{% static 'img/logo.png' %}" class="logo">
+                            Airbnb
+                        </a>
+                        <div class="right floated item">
+                            <a class="item">
+                                View All
+                            </a>
+                            <a class="item">
+                                About Project
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Floating Layout-->
+                    <div class="ui middle aligned center aligned stackable grid" id="floating-form">
+                        
+                                <div class="row">
+                                        <div class="sixteen wide column">
+                                                <div class="text">
+                                                    <h1 class="ui inverted header">Disaster Readiness and Risk Reduction Project</h1>
+                                                </div>
+                                         </div>
+                                </div>
+                                <!-- Form -->
+                                <div class="row">
+                                        <div class="eight wide computer sixteen wide column">
+                                            <a href="{% url 'main:content_list' %}" class="ui red large button">Learn More</a>
+                                            <!--
+                                                <div class="ui dropdown red button">
+                                                    <div class="text">Topic</div>
+                                                    <i class="dropdown icon"></i>
+                                                    <div class="menu">
+                                                        <div class="item">Choice 1</div>
+                                                        <div class="item">Choice 2</div>
+                                                        <div class="item">Choice 3</div>
+                                                    </div>
+                                                </div>	
+                                            -->
+                                            </div>					
+                                </div>
+
+                        </div>	
+                </div>  
+            </div>
+            <div class="ui inverted vertical footer segment">
+                <div class="ui container">
+                    <div class="ui stackable inverted divided equal height grid">
+                        <div class="row">
+                            <div class="three wide column">
+                                <h4>Something</h4>
+                                <div class="ui inverted link list">
+                                        <a href="#" class="ui item">Something</a>
+                                        <a href="#" class="ui item">Something</a>
+                                        <a href="#" class="ui item">Something</a>
+                                        <a href="#" class="ui item">Something</a>
+                                        <a href="#" class="ui item">Something</a>
+                                </div>
+                            </div>
+                            <div class="three wide column">
+                                <h4>Something</h4>
+                                <div class="ui inverted link list">
+                                    <a href="#" class="ui item">Something</a>
+                                    <a href="#" class="ui item">Something</a>
+                                    <a href="#" class="ui item">Something</a>
+                                    <a href="#" class="ui item">Something</a>
+                                    <a href="#" class="ui item">Something</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'semantic/semantic.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

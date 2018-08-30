@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <style>
+        body {
+            background: #EFF6EE;
+        }
+        .ui.menu .item img.logo {
+            margin: 0 1.5em 0 1.5em;
+        }
+        .ui.menu {
+            background: #b50000;
+        }
+        .ui.menu .item {
+            color: white;
+            font-size: 15px;
+        }
+        .ui.inverted.footer {
+            background: #b50000;
+        }
+        * {
+            font-family: Ubuntu;
+        }
+        .ui.container.content {
+            margin: 10em;
+        }
+        .ui.container .ui.segment {
+            margin: 1em 0 1em 0;
+        }
+        .ui.sidebar.vertical.menu .item{
+            color: #000;
+        }
+        .ui.sidebar.menu .sidebar.header {
+            margin: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- hidden sidebar menu-->
+    <div class="ui sidebar vertical menu">
+        <div class="sidebar header">
+            <h1>Project Title</h1>
+        </div>
+        <div class="item">
+            Item 1
+        </div>
+        <div class="item">
+            Item 2
+        </div>
+        <div class="item">
+            Item 3
+        </div>
+        <div class="item">
+            Item 4
+        </div>
+    </div>
+    <div class="ui primary fixed menu">
+        <a class="toc item">
+            <i class="sidebar icon"></i>
+            Menu
+        </a>
+        <a class="ui right header active item" href="#">
+                Project Title
+                <img src="img/logo.png" class="logo">
+        </a>
+    </div>
+    <div>
+        <!-- Content -->
+        <div class="ui container content">
+            <div class="ui raised segment">
+
+            </div>
+        </div>
+        <!-- Footer -->
+ <!--     <div class="ui vertical inverted footer segment">
+                   <div class="ui container">
+                        <div class="ui stackable inverted divided equal height grid">
+                            <div class="row">
+                                <div class="three wide column">
+                                    <h4>Something</h4>
+                                    <div class="ui inverted link list">
+                                            <a href="#" class="ui item">Something</a>
+                                            <a href="#" class="ui item">Something</a>
+                                            <a href="#" class="ui item">Something</a>
+                                            <a href="#" class="ui item">Something</a>
+                                            <a href="#" class="ui item">Something</a>
+                                    </div>
+                                </div>
+                                <div class="three wide column">
+                                    <h4>Something</h4>
+                                    <div class="ui inverted link list">
+                                        <a href="#" class="ui item">Something</a>
+                                        <a href="#" class="ui item">Something</a>
+                                        <a href="#" class="ui item">Something</a>
+                                        <a href="#" class="ui item">Something</a>
+                                        <a href="#" class="ui item">Something</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+              <!--        </div>
+        </div>
+    -->
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.toc').click(function() {
+                $('.ui.sidebar').sidebar('toggle')
+            });
+        });
+    </script>
+    
+    <script src="semantic/semantic.min.js"></script>
+</body>
+</html>

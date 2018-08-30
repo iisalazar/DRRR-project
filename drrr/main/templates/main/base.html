@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'semantic/semantic.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+</head>
+<body>
+        <div class="ui sidebar vertical menu">
+                <div class="sidebar header">
+                    <h1>Project Title</h1>
+                </div>
+                <div class="item">
+                    Item 1
+                </div>
+                <div class="item">
+                    Item 2
+                </div>
+                <div class="item">
+                    Item 3
+                </div>
+                <div class="item">
+                    Item 4
+                </div>
+            </div>
+            <div class="ui primary fixed menu">
+                <a class="toc item">
+                    <i class="sidebar icon"></i>
+                    Menu
+                </a>
+                <a class="ui right header item" href="#">
+                        Project Title
+                        <img src="{% static 'img/logo.png' %}" class="logo">
+                </a>
+            </div>
+            <div>
+                <!-- Content -->
+                <div class="ui container content">
+                    <div class="ui raised segment">
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </div>
+                <!-- Footer -->
+         <!--     <div class="ui vertical inverted footer segment">
+                           <div class="ui container">
+                                <div class="ui stackable inverted divided equal height grid">
+                                    <div class="row">
+                                        <div class="three wide column">
+                                            <h4>Something</h4>
+                                            <div class="ui inverted link list">
+                                                    <a href="#" class="ui item">Something</a>
+                                                    <a href="#" class="ui item">Something</a>
+                                                    <a href="#" class="ui item">Something</a>
+                                                    <a href="#" class="ui item">Something</a>
+                                                    <a href="#" class="ui item">Something</a>
+                                            </div>
+                                        </div>
+                                        <div class="three wide column">
+                                            <h4>Something</h4>
+                                            <div class="ui inverted link list">
+                                                <a href="#" class="ui item">Something</a>
+                                                <a href="#" class="ui item">Something</a>
+                                                <a href="#" class="ui item">Something</a>
+                                                <a href="#" class="ui item">Something</a>
+                                                <a href="#" class="ui item">Something</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                      <!--        </div>
+                </div>
+            -->
+            </div>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+    <script src="{% static 'semantic/semantic.min.js' %}"></script>
+</body>
+</html>

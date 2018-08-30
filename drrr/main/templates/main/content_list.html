@@ -1,0 +1,7 @@
+{% extends 'main/base.html' %}
+{% block content %}
+    <h1 class="ui header">Hello World</h1>
+    {% for content in content_list %}
+        <button class="ui teal button">{{ content.header }}</button>
+    {% endfor %}
+{% endblock %}
